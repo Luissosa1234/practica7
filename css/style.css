@@ -1,0 +1,38 @@
+body {
+  background-color: rgb(170, 110, 110);
+  text-align: center;
+}
+
+header {
+  width: 1000px;
+  margin: auto;
+}
+
+.imagen {
+  width: 1000px;
+  background-color: rgb(214, 166, 166);
+  margin: auto;
+  border-radius: 100px;
+  padding: 10px;
+}
+
+img {
+  border-radius: 100px;
+}
+
+.tabla {
+  width: 1000px;
+  background-color: rgb(214, 166, 166);
+  margin: 20px auto 20px auto;
+  border-radius: 100px;
+  padding: 20px;
+}
+
+table{
+    border: black 1px solid; 
+    width: 80%; 
+    margin:auto; 
+    border-radius: 10px; 
+    background-color:
+     rgb(132, 214, 187); 
+}
