@@ -3,11 +3,13 @@ body {
   text-align: center;
 }
 
+
 header {
   width: 1000px;
   margin: auto;
 }
 
+/* seccion de la imagen */
 #seccion_imagen {
   width: 1000px;
   background-color: rgb(214, 166, 166);
@@ -31,6 +33,7 @@ img {
 
 }
 
+/* seccion de la tabla */
 #seccion_tabla {
   width: 1000px;
   height: 200px;
@@ -40,36 +43,60 @@ img {
   padding: 20px;
 }
 
-.division_tabla{
+.division_tabla {
   background-color: rgb(177, 169, 169);
   border-radius: 100px;
   height: 170px;
 }
 
 .division_tabla table {
-  border: black 1px solid;
+  border: rgb(21, 52, 190) 3px solid;
   width: 90%;
   margin: auto;
   border-radius: 10px;
-  background-color:rgb(134, 139, 138);
+  background-color: rgb(134, 139, 138);
+  color: white;
 }
 
-.division_tabla th{
+.division_tabla th {
   background-color: grey;
   color: white;
-  border-radius: 100px; 
-  border: black 1px solid
+  border-radius: 100px;
+  border: black 1px solid;
 }
 
-.uni {
-  background-color: rgb(174, 200, 230);
-  margin: auto;
-  border: black 1px solid;
-  border-radius: 5px;
-  width: 200px;
+.division_tabla .none {
+  background-color: white;
+  color: gray;
+}
+
+.division_tabla .par {
+  background-color: rgb(56, 135, 187);
+  color: white;
+}
+
+
+
+/* seccion de listas */
+
+#seccion_lista {
+  width: 1000px;
+  background-color: rgb(214, 166, 166);
+  margin: 20px auto 20px auto;
+  border-radius: 100px;
+  padding: 20px;
 }
 
 .tituni {
   border: black 1px solid;
   border-radius: 10px;
 }
+
+.uni {
+  background-color: rgb(119, 211, 157);
+  margin: auto;
+  border: black 1px solid;
+  border-radius: 5px;
+  width: 200px;
+}
+
