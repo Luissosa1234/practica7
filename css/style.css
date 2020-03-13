@@ -16,17 +16,24 @@ header {
   margin: auto;
   border-radius: 100px;
   padding: 10px;
+
+/* para poner 2 objetos en una misma linea separados
+use el display grid ya que estos 
+con el grid-template-columns separan los 2 objectos 
+repeat 2 1fr quiere decir que divida las 2 imagenes 
+en 2 fracciones de pantalla  */
+
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 }
 
 
-
+/* div con la imagen */
 img {
   border-radius: 100px;
   width: 400px;
 }
-
+/* div con el texto */
 .imagen_texto {
   text-align: justify;
   padding: 10px;
@@ -90,13 +97,38 @@ img {
 .tituni {
   border: black 1px solid;
   border-radius: 10px;
+  
 }
 
+
 .uni {
-  background-color: rgb(119, 211, 157);
+  background-color: rgb(177, 238, 203);
   margin: auto;
   border: black 1px solid;
   border-radius: 5px;
   width: 200px;
+  text-align: left;
 }
 
+/* 
+cambia el icono normal por el de una imagen 
+de las listas ordenadas */
+li{
+  list-style-image: url(/img/w1.gif);
+}
+/* 
+quita las lineas de los links
+cambia el tamaño y el color */
+a{
+  text-decoration: none;
+  font-size: 1.3rem;
+  color: rgb(36, 109, 36);
+}
+
+/* hover significa que cuando pase el maus 
+por encima aparesca la linea y cambie el color
+ */
+a:hover{
+text-decoration: underline;
+color: hotpink;
+}
