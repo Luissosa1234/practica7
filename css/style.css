@@ -8,31 +8,68 @@ header {
   margin: auto;
 }
 
-.imagen {
+#seccion_imagen {
   width: 1000px;
   background-color: rgb(214, 166, 166);
   margin: auto;
   border-radius: 100px;
   padding: 10px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
 }
+
+
 
 img {
   border-radius: 100px;
+  width: 400px;
 }
 
-.tabla {
+.imagen_texto {
+  text-align: justify;
+  padding: 10px;
+
+}
+
+#seccion_tabla {
   width: 1000px;
-  background-color: rgb(214, 166, 166);
+  height: 200px;
+  background-color: rgb(65, 63, 63);
   margin: 20px auto 20px auto;
   border-radius: 100px;
   padding: 20px;
 }
 
-table{
-    border: black 1px solid; 
-    width: 80%; 
-    margin:auto; 
-    border-radius: 10px; 
-    background-color:
-     rgb(132, 214, 187); 
+.division_tabla{
+  background-color: rgb(177, 169, 169);
+  border-radius: 100px;
+  height: 170px;
+}
+
+.division_tabla table {
+  border: black 1px solid;
+  width: 90%;
+  margin: auto;
+  border-radius: 10px;
+  background-color:rgb(134, 139, 138);
+}
+
+.division_tabla th{
+  background-color: grey;
+  color: white;
+  border-radius: 100px; 
+  border: black 1px solid
+}
+
+.uni {
+  background-color: rgb(174, 200, 230);
+  margin: auto;
+  border: black 1px solid;
+  border-radius: 5px;
+  width: 200px;
+}
+
+.tituni {
+  border: black 1px solid;
+  border-radius: 10px;
 }

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,23 +13,24 @@ el mismo documento html
 background-color: le da un color a todo el cuerpo de la pagina body
 text-aling; atributo global que alinea todos los textos en el centro
 -->
-<body >
- 
-<!--
+
+<body>
+
+    <!--
     etiqueta header es un tipo de contenedor 
     pero solo se utiliza con los encabezados de pagina
     width: le da un ancho 
     margin: da margenes automaticos al contenedor div
--->    
-<header >
-    <h1>Práctica de la sesión 4</h1>
-</header>
-   
-<!--Primer div que tiene una imagen
+-->
+    <header>
+        <h1>Práctica de la sesión 7</h1>
+    </header>
+
+    <!--Primer div que tiene una imagen
 etiqueta imagen img no se cierra </img>
 es de las pocas etiquetas que no tienen cierre
  -->
-<!--
+    <!--
     class: es para usarse en css
     style: aplica css en el mismo html
     width: le da un ancho 
@@ -37,20 +39,42 @@ es de las pocas etiquetas que no tienen cierre
     border-radius: quita las esquinas puntiagudas 
     padding: da una distancia entre los bordes del div y el contenido de 10px
  -->
-<div class="imagen" >
- <h3>Imagen</h3>
-<!--
+    <div id="seccion_imagen">
+
+        <div class="imagen">
+            <h3>Imagen</h3>
+            <!--
     img es la etiqueta que agrega la imagen
     si tiene una subcarpeta para regresar salir de una carpeta se pone ../imagenes/jp.jpg
     alt: si no carga la imagen muestra el texto
     border-radius: quita las esquinas puntiagudas las pone redondas
  -->
+            <img src="img/jp.jpg" alt="Jurassic Park">
 
-    <img src="img/jp.jpg" alt="Jurassic Park" >
+        </div>
 
-</div>
+        <div class="imagen_texto">
+            <h3>Descripción</h3>
+            <p>El multimillonario John Hammond tiene una idea
+                para un espectacular parque temático: una isla
+                retirada donde los visitantes puedan observar
+                dinosaurios reales. Con la última tecnología
+                en el desarrollo de DNA, los científicos pueden
+                clonar braquiosaurios, triceratops, velociraptors y
+                un tiranosaurio rex, utilizando para ello la sangre
+                fosilizada en ámbar contenida en insectos que los mordieron
+                hace millones de años. Los paleontólogos Alan Grant,
+                Ellie Sattler y Ian Malcolm visitan el parque y quedan
+                muy sorprendidos con los resultados obtenidos.
+                Pero cuando un problemático empleado manipula el
+                sofisticado sistema de seguridad los dinosaurios
+                escapan, obligando a los visitantes a luchar por
+                su supervivencia.
+            </p>
+        </div>
+    </div>
 
-<!--
+    <!--
     class: es para usarse en css
     style: aplica css en el mismo html
     width: le da un ancho 
@@ -59,44 +83,47 @@ es de las pocas etiquetas que no tienen cierre
     border-radius: quita las esquinas puntiagudas 
     padding: da una distancia entre los bordes del div y el contenido de 10px
  -->
-<div class="tabla" >
-<!--
+    <div id="seccion_tabla">
+        <!--
     h3: es una etiqueta titulo
     tr: tabla renglon
     th: tabla encabezado
     td: tabla contenido
 
  -->
-<h3>Tabla</h3>
+ <div class="division_tabla">
+
+ 
+        <h3>Tabla</h3>
 
 
-<table style="border: black 1px solid; width: 80%; margin:auto; border-radius: 10px; background-color: rgb(132, 214, 187); ">
+        <table>
 
-    <tr>
-        <th style="border-radius: 100px; border: black 1px solid;" >Materia</th>
-        <th style="border-radius: 100px;border: black 1px solid;">Profesor</th>
-    </tr>
+            <tr>
+                <th >Materia</th>
+                <th >Profesor</th>
+            </tr>
 
-    <tr>
-        <td>Programmacion Web</td>
-        <td>Abraham Vega Tapia</td>
-    </tr>
-    <tr>
-        <td>Software Especializado</td>
-        <td>Abraham Vega Tapia</td>
-    </tr>
-    <tr>
-        <td>Bases de datos distribuidas</td>
-        <td>Erick Jorgue Roberto Muñoz</td>
-    </tr>
-    <tr>
-        <td>Estadistica II</td>
-        <td>Cyndi Anahy</td>
-    </tr>
-</table>
-
-</div>
-<!--
+            <tr>
+                <td>Programmacion Web</td>
+                <td>Abraham Vega Tapia</td>
+            </tr>
+            <tr>
+                <td>Software Especializado</td>
+                <td>Abraham Vega Tapia</td>
+            </tr>
+            <tr>
+                <td>Bases de datos distribuidas</td>
+                <td>Erick Jorgue Roberto Muñoz</td>
+            </tr>
+            <tr>
+                <td>Estadistica II</td>
+                <td>Cyndi Anahy</td>
+            </tr>
+        </table>
+    </div>
+    </div>
+    <!--
     class: es para usarse en css
     style: aplica css en el mismo html
     width: le da un ancho 
@@ -106,10 +133,10 @@ es de las pocas etiquetas que no tienen cierre
     padding: da una distancia entre los bordes del div y el contenido de 10px
  -->
 
-<div class="lista" style="width: 1000px; background-color: rgb(214, 166, 166); margin: 20px auto 20px auto;
+    <div class="lista" style="width: 1000px; background-color: rgb(214, 166, 166); margin: 20px auto 20px auto;
 border-radius: 100px; padding: 20px;">
-<h3>Listas</h3>
-<!--
+        <h3>Listas</h3>
+        <!--
  para sentrar la lista la coloque dentro de una tabla para poder centrar la tabla dentro del contenedor y asi se 
  pudiera centrar la lista
  ul: unorder list: lista desordenada
@@ -119,49 +146,50 @@ border-radius: 100px; padding: 20px;">
  target: es la forma en que se nos abrira el enlace target="_blank" significa que se nos abra una pagina nueva al dar click
  -->
 
-<table style="background-color: rgb(174, 200, 230); margin: auto; border: black 1px solid; border-radius: 5px;">
-    <tr>
-        <th style="border: black 1px solid; border-radius: 10px;">Centros Universitarios</th>
-    </tr>
-    <tr>
-        <ul >  
-        <td style=" text-align: left; ">
+        <table class="uni">
+            <tr>
+                <th class="tituni">Centros Universitarios</th>
+            </tr>
+            <tr>
+                <ul>
+                    <td style=" text-align: left; ">
 
-            <li>
-            <a href="http://www.valles.udg.mx/" target="_blank">
-            Cuvalles
-            </a>
-            </li>
-            <li >
-                <a href="http://www.cucea.udg.mx/" target="_blank">
-                Cucea  
-                </a>
-            </li>
-            <li>
-                <a href="http://www.cucei.udg.mx/" target="_blank">
-                Cucei 
-                </a>
-            </li>
-            <li>
-                <a href="http://www.cucba.udg.mx/" target="_blank">
-                Cucba 
-                </a>
-            </li>
-            <li>
-                <a href="http://www.cutonala.udg.mx/" target="_blank">
-                CuTonala
-                </a>
-            </li>
-        </td>
-        </ul> 
-    </tr>
-       
-    
-</table>
-
-</div>
+                        <li>
+                            <a href="http://www.valles.udg.mx/" target="_blank">
+                                Cuvalles
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://www.cucea.udg.mx/" target="_blank">
+                                Cucea
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://www.cucei.udg.mx/" target="_blank">
+                                Cucei
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://www.cucba.udg.mx/" target="_blank">
+                                Cucba
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://www.cutonala.udg.mx/" target="_blank">
+                                CuTonala
+                            </a>
+                        </li>
+                    </td>
+                </ul>
+            </tr>
 
 
-    
+        </table>
+
+    </div>
+
+
+
 </body>
+
 </html>
